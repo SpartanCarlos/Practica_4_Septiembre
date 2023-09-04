@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+  <h1>Formularios en HTML</h1>
+  <form action="" method="post">
+    <div>
+      <label for="Nombre">Nombre:</label> <!-- Etiqueta -->
+      <input type="text" name="Nombre" id="Nombre"> <!-- Caja de comentarios --> 
+    </div>
+
+
+    <div>
+     <label for="ColorFav">color favorito:</label>
+     <input type="Color" name="colorfav" id="colorfav">
+    </div>
+
+    <div>
+     <label for="fechaNac">Fecha de Nacimiento:</label>
+     <input type="date" name="fechaNac" id="fechaNac">
+    </div>
+
+    <div>
+        <label for="Clave">Clave:</label>
+        <input type="password" name="Clave" id="Clave">
+     </div>
+
+   <div>
+        <label for="semestre">Semestre:</label>
+        <input type="range" min="1" max="9" name="Semestre" id="Semestre">
+     </div>
+
+    <div>
+        <label for="Comentarios">Comentarios:</label>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea> <!-- Caja Sencilla  -->
+     </div>
+
+    <div>
+        <label for="Curriculum">Curriculum:</label>
+       <input type="file" name="curriculum" id="curriculum">
+     </div>
+
+    <div>
+          <label for="Curso">Curso:</label>
+         <select name="curso" id="curso"> <!-- Lista donde aparece en la caja con una selecion de opciones  -->
+         <option value="1">Python</option>
+         <option value="2">C#</option>
+         <option value="3">Cobol</option>
+       </select>
+     </div>
+
+    <div>
+        <label for="Curso">Curso:</label>
+       <select name="curso" id="curso" multiple> <!-- Lista donde aparece selecion multiple  -->
+       <option value="1">Python</option>
+       <option value="2">C#</option>
+       <option value="3">Cobol</option>
+     </select>
+   </div>
+
+   <div>
+
+    <label for="Curso">Curso:</label>
+   <select name="curso" id="curso" >
+    <optgroup label="En linea">
+        <option value="1">Python</option>
+
+    </optgroup>
+    <optgroup label="En Presencial">
+        <option value="2">C#</option>
+        <option value="3">Cobol</option>
+    </optgroup>
+     
+   </select>
+    </div>
+
+    <div>
+    <input type="button" value="Guardar">
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar">
+    <button>Enviar</button>
+    <a href="#">Enviar</a>
+     </div>
+
+  </form>
+  
+</body>
+</html>
